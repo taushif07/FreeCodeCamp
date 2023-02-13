@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Taushif's Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Taushif's Edtech Form</h1>
+    <p id="description">
+      You have to fill the form in order to enroll in our course
+    </p>
+    <form id="survey-form">
+      <fieldset id="form-fieldset">
+        <label for="name" id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">
+          Email  <input id="email" type="email" name="email" placeholder="Enter your email" required />
+        </label >
+        <label id="number-label" for="number">
+          Number <input id="number" type="number" name="number" placeholder="Enter your number" min="300" max="5000000000" required />
+        </label>
+      </fieldset>
+      <fieldset>
+         <label for="dropdown">Select your desired course: 
+          <select id="dropdown" name="Courses">
+            <option value="">
+              (select one)
+            </option>
+            <option value="1">
+              Font End Development
+            </option>
+            <option value="2">
+              Back End Development
+            </option>
+            <option value="3">
+              Full Stack Development
+            </option>
+          </select>
+        </label>
+        <p>Which type of course you would to join? </p>
+        <label for='full-time'>
+          <input class="inline" type="radio" id="full-time" name="course-type"
+          value="Full Time Course" />
+          Full Time Course
+        </label>
+                <label for='part-time'>
+          <input class="inline" type="radio" id="part-time" name="course-type" 
+          value="Part Time Course"/>
+          Part Time Course
+        </label>
+        <p>In which of the following languages you want to learn development?</p>
+        <label for="js">
+          <input
+          class="inline" id="js" type="checkbox" value="JavaScript" />
+          JavaScript
+        </label>
+        <label  for="python">
+          <input class="inline" type="checkbox" value="Python" />
+          Python
+        </label>
+        <label for="java">
+          <input class="inline" id="java" type="checkbox" value="Java" />
+          Java
+        </label>                
+      </fieldset>
+      <fieldset>
+        <label for="intro">
+          Please introduce yourself in brief 
+          <textarea id="intro" name="introduction" rows="3" cols="30" placeholder="I am an aspiring..."></textarea>
+        </label>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
